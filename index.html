@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>PharmaLog – Motion Poster</title>
+  <meta name="description" content="PharmaLog – ผู้ช่วยอัจฉริยะร้านยายุค AI เปลี่ยนเสียงสนทนาให้เป็นเวชระเบียนดิจิทัล (EMR)">
+  <meta name="theme-color" content="#F3F8FD">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Fixed 1080×1920 canvas, scaled to fit any screen by js/app.js -->
+  <main class="stage" id="stage" data-scene="0">
+
+    <!-- ===== Background: log paper + floating capsules ===== -->
+    <div class="bg-paper"></div>
+    <div class="bg-margin"></div>
+    <div class="bg-glow g1"></div>
+    <div class="bg-glow g2"></div>
+    <div class="bg-pills" id="bgPills"></div>
+
+    <!-- ===== Top chrome ===== -->
+    <header class="chrome-top">
+      <div class="segments" id="segments"></div>
+      <div class="mini-brand">
+        <span class="mini-cap"><i></i><i></i></span>
+        <span class="wordmark sm">Pharma<b>Log</b></span>
+      </div>
+    </header>
+
+    <!-- ===================================================== -->
+    <!-- SCENE 1 · PharmaLog คืออะไร                            -->
+    <!-- ===================================================== -->
+    <section class="scene s-hook" data-dur="10000">
+      <svg class="hook-art" viewBox="0 0 920 420" aria-hidden="true">
+        <g class="lines">
+          <rect class="ln" data-at="3600" x="200" y="250" width="520" height="22" rx="11"/>
+          <rect class="ln" data-at="3800" x="200" y="300" width="420" height="22" rx="11"/>
+          <rect class="ln" data-at="4000" x="200" y="350" width="470" height="22" rx="11"/>
+        </g>
+        <path class="wave" id="heroWave" data-at="1500" d=""/>
+        <g class="cap" data-at="150">
+          <g class="cap-l" data-at="1300">
+            <path d="M460 105 H385 a75 75 0 0 0 0 150 H460 Z" class="cap-fill-g"/>
+            <path d="M412 155 h28 M426 141 v28" class="cap-cross"/>
+          </g>
+          <g class="cap-r" data-at="1300">
+            <path d="M460 105 H535 a75 75 0 0 1 0 150 H460 Z" class="cap-fill-w"/>
+          </g>
+          <ellipse class="cap-shine" cx="420" cy="128" rx="36" ry="8"/>
+        </g>
+      </svg>
+
+      <div class="tag rise" data-at="2300">✦ นวัตกรรม AI ผู้ช่วยร้านยาอัจฉริยะ</div>
+      <h1 class="wordmark xl pop" data-at="2700">Pharma<b>Log</b></h1>
+
+      <h2 class="kinetic hook-head">
+        <span class="w" data-at="4400"><span>ผู้ช่วยอัจฉริยะ</span></span><br>
+        <span class="w hl" data-at="4650"><span>ร้านยายุค AI</span></span>
+      </h2>
+      <p class="lead rise" data-at="5600">
+        เปลี่ยนเสียงสนทนาให้เป็น<br><b>เวชระเบียนดิจิทัล (EMR)</b><br>
+        อัตโนมัติ รวดเร็ว ถูกต้อง และปลอดภัย
+      </p>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SCENE 2 · ทำงานอย่างไร                                  -->
+    <!-- ===================================================== -->
+    <section class="scene s-steps" data-dur="12500">
+      <div class="tag rise" data-at="50">⚡ สเต็ปง่ายๆ ลื่นไหล</div>
+      <h2 class="kinetic title">
+        <span class="w" data-at="150"><span>ทำงานอย่างไร?</span></span><br>
+        <span class="w hl" data-at="400"><span>แค่พูดคุย</span></span>
+      </h2>
+      <p class="sub rise" data-at="800">ระบบ AI จัดการให้อัตโนมัติในพริบตา</p>
+
+      <div class="steps">
+        <svg class="spine" viewBox="0 0 20 900" preserveAspectRatio="none" aria-hidden="true">
+          <path class="spine-line" data-at="1200" d="M10 0 V900"/>
+        </svg>
+
+        <div class="step" data-at="1400">
+          <div class="num"><span>1</span></div>
+          <div class="step-body">
+            <h3>ขออนุญาตก่อนบันทึก</h3>
+            <p>โปร่งใส ปลอดภัย คุณเลือกยินยอมหรือปฏิเสธได้เสมอ</p>
+          </div>
+        </div>
+        <div class="step" data-at="2900">
+          <div class="num"><span>2</span></div>
+          <div class="step-body">
+            <h3>ถอดเสียงแยกผู้พูด</h3>
+            <p>แยกเสียงเภสัชกรและคนไข้ แปลงบทสนทนาเป็นข้อความทันที</p>
+          </div>
+        </div>
+        <div class="step" data-at="4400">
+          <div class="num"><span>3</span></div>
+          <div class="step-body">
+            <h3>สกัด EMR จัดหมวดหมู่</h3>
+            <p>จัดหมวดอาการ แพ้ยา โรคประจำตัว และยาที่จ่าย ครบถ้วน</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chips">
+        <span class="chip c-ink pop" data-at="5800">อาการหลัก</span>
+        <span class="chip c-red pop" data-at="6000">ประวัติแพ้ยา</span>
+        <span class="chip c-blue pop" data-at="6200">โรคประจำตัว</span>
+        <span class="chip c-amber pop" data-at="6400">ยาที่ใช้</span>
+      </div>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SCENE 3 · ดูแลใส่ใจ                                     -->
+    <!-- ===================================================== -->
+    <section class="scene s-trust" data-dur="12000">
+      <div class="tag rise" data-at="50">🛡️ มาตรฐานความปลอดภัย</div>
+      <h2 class="kinetic big">
+        <span class="w" data-at="150"><span>ดูแลใส่ใจ...</span></span><br>
+        <span class="w" data-at="450"><span>ข้อมูลถูกต้อง</span></span><br>
+        <span class="w hl" data-at="700"><span>แม่นยำ</span></span>
+      </h2>
+
+      <div class="shield-wrap pop" data-at="1500">
+        <svg viewBox="0 0 240 240" aria-hidden="true">
+          <circle class="ring" cx="120" cy="120" r="108"/>
+          <path class="shield" d="M120 38 L184 66 V114 C184 156 120 194 120 194 C120 194 56 156 56 114 V66 Z"/>
+          <path class="check" data-at="2100" d="M92 118 L112 138 L152 96"/>
+        </svg>
+      </div>
+
+      <ul class="trust">
+        <li class="from-l" data-at="2700">
+          <span class="ti"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></span>
+          <div><b>เภสัชกรมีเวลาปรึกษาคุณเต็มที่</b><small>ไม่ต้องคอยก้มหน้าพิมพ์</small></div>
+        </li>
+        <li class="from-r" data-at="3200">
+          <span class="ti"><svg viewBox="0 0 24 24"><path d="M12 3a4 4 0 0 1 4 4v3H8V7a4 4 0 0 1 4-4zM6 10h12v10H6z"/></svg></span>
+          <div><b>ข้อมูลถูกเก็บเป็นความลับ</b><small>เข้ารหัสปลอดภัยตามมาตรฐานสากล</small></div>
+        </li>
+        <li class="from-l" data-at="3700">
+          <span class="ti"><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg></span>
+          <div><b>เภสัชกรตรวจทานซ้ำทุกครั้ง</b><small>มั่นใจในความถูกต้องก่อนบันทึก</small></div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================================================== -->
+    <!-- SCENE 4 · ปิดท้าย                                        -->
+    <!-- ===================================================== -->
+    <section class="scene s-outro" data-dur="9000">
+      <div class="burst" id="burst" data-at="300"></div>
+      <div class="outro-cap spin-in" data-at="200"><i></i><i></i></div>
+      <h1 class="wordmark xxl pop" data-at="700">Pharma<b>Log</b></h1>
+      <p class="tagline kinetic">
+        <span class="w" data-at="1300"><span>ผู้ช่วยอัจฉริยะ</span></span><span class="w" data-at="1550"><span>ร้านยายุค AI</span></span>
+      </p>
+      <div class="credit rise" data-at="2400">
+        <p>โครงงานวิจัย คณะวิศวกรรมศาสตร์<br>สาขา AI &amp; Data Science</p>
+        <p class="uni">มหาวิทยาลัยกรุงเทพ</p>
+        <p class="uni-en">Bangkok University</p>
+      </div>
+    </section>
+
+    <!-- ===== Bottom marquee ===== -->
+    <footer class="ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <span>เปลี่ยนเสียงสนทนาให้เป็นเวชระเบียนดิจิทัล (EMR)</span><i class="tk-pill"></i>
+        <span>โปร่งใส ปลอดภัย</span><i class="tk-pill"></i>
+        <span>ข้อมูลถูกเก็บเป็นความลับ</span><i class="tk-pill"></i>
+        <span>เภสัชกรตรวจทานซ้ำทุกครั้ง</span><i class="tk-pill"></i>
+      </div>
+    </footer>
+
+    <!-- Bangkok University logo (put the file at assets/bu-logo.png) -->
+    <img class="bu-logo" src="assets/bu-logo.png" alt="มหาวิทยาลัยกรุงเทพ" onerror="this.remove()">
+
+    <!-- Mascot: a little capsule that travels between scenes -->
+    <div class="mascot" id="mascot" aria-hidden="true">
+      <div class="m-hop">
+        <svg viewBox="0 0 200 290">
+          <ellipse class="m-shadow" cx="100" cy="276" rx="54" ry="9"/>
+          <g class="m-legs">
+            <path d="M80 236 V262"/><path d="M120 236 V262"/>
+            <ellipse cx="76" cy="264" rx="12" ry="7"/><ellipse cx="124" cy="264" rx="12" ry="7"/>
+          </g>
+          <path class="m-arm-l" d="M42 150 L16 178"/>
+          <g class="m-arm-r"><path d="M158 150 L186 116"/><circle cx="188" cy="112" r="9"/></g>
+          <path class="m-top" d="M40 130 V80 a60 60 0 0 1 120 0 V130 Z"/>
+          <path class="m-bot" d="M43 130 V180 a57 57 0 0 0 114 0 V130 Z"/>
+          <ellipse class="m-shine" cx="70" cy="62" rx="10" ry="20" transform="rotate(25 70 62)"/>
+          <g class="m-eyes">
+            <ellipse cx="78" cy="98" rx="15" ry="18" fill="#fff"/>
+            <ellipse cx="122" cy="98" rx="15" ry="18" fill="#fff"/>
+            <g class="m-pupils" id="mPupils">
+              <circle cx="78" cy="100" r="8"/><circle cx="122" cy="100" r="8"/>
+              <circle cx="81" cy="96" r="2.6" fill="#fff"/><circle cx="125" cy="96" r="2.6" fill="#fff"/>
+            </g>
+          </g>
+          <ellipse class="m-cheek" cx="64" cy="146" rx="10" ry="6"/>
+          <ellipse class="m-cheek" cx="136" cy="146" rx="10" ry="6"/>
+          <path class="m-smile" d="M84 148 Q100 166 116 148"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="taps" id="taps"></div>
+
+    <!-- Capsule wipe transition -->
+    <div class="wipe" id="wipe"><i></i><i></i></div>
+  </main>
+
+  <!-- Controls: hidden until the mouse moves or the screen is tapped -->
+  <nav class="controls" id="controls" aria-label="ควบคุมโปสเตอร์">
+    <button data-act="prev" title="ก่อนหน้า (←)" aria-label="ก่อนหน้า">‹</button>
+    <button data-act="play" title="เล่น / หยุด (Space)" aria-label="เล่นหรือหยุด" id="playBtn">❚❚</button>
+    <button data-act="next" title="ถัดไป (→)" aria-label="ถัดไป">›</button>
+    <button data-act="full" title="เต็มจอ (F)" aria-label="เต็มจอ">⛶</button>
+  </nav>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
